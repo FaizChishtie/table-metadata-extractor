@@ -7,7 +7,7 @@ Python flask app with an endpoint
 - ~~Intial setup~~
 - ~~Create route~~
 - ~~Connect to SQLAlchemy~~
-- Respond with table metadata
+- ~~Respond with table metadata~~
 - Validate route parameters
 - Handle errors
 - Refactor & clean code
