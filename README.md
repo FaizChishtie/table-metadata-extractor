@@ -2,7 +2,6 @@
 
 Python flask app with an endpoint
 
-
 ## Todo
 
 - ~~Intial setup~~
@@ -23,4 +22,10 @@ fix: remove broken confirmation message
 refactor: share logic between 4d3d3d3 and flarhgunnstow
 style: convert tabs to spaces
 test: ensure Tayne retains clothing
+```
+
+## Mock DB URI
+
+```
+    sqlite:////{path}/table-metadata-extractor/src/db.sqlite
 ```
