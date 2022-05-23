@@ -26,6 +26,16 @@ test: ensure Tayne retains clothing
 
 ## Mock DB URI
 
+### Local
+
 ```
     sqlite:////{path}/table-metadata-extractor/src/db.sqlite
 ```
+
+### Public
+
+```
+    postgresql://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk:5432/pfmegrnargs
+```
+
+[RNAcentral](https://rnacentral.org/help/public-database)
