@@ -6,8 +6,8 @@ Python flask app with an endpoint
 ## Todo
 
 - ~~Intial setup~~
-- Create route
-- Connect to SQLAlchemy
+- ~~Create route~~
+- ~~Connect to SQLAlchemy~~
 - Respond with table metadata
 - Validate route parameters
 - Handle errors
