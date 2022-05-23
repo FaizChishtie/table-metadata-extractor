@@ -1,15 +1,26 @@
 from flask import Flask, request, jsonify
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
+from sqlalchemy import MetaData, create_engine
+import json
+
 import os
 
 # initialize app
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
-def get():
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+@app.route('/', methods=['POST'])
+def findTableMetadata():
+    uri = request.json['uri']
+
+    connection = create_engine(uri)
+
+    metadata = MetaData(bind=connection)
+
+    metadata.reflect()
+
     return jsonify({
-        'msg': 'intial message'
+        'metadata': list(metadata.tables.keys())
     })
 
 # start server
