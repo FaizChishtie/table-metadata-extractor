@@ -2,6 +2,28 @@
 
 Python flask app with an endpoint
 
+## Running Table Metadata Extractor
+
+### Start
+
+```
+    sh start.sh
+```
+
+The server should start on port 5000
+
+### API
+
+To retrieve table metadata for a database:
+
+Send a POST request to (/) route: 
+```
+body:
+    {
+        "uri" : "postgresql://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk:5432/pfmegrnargs"
+    }
+```
+
 ## Todo
 
 - ~~Intial setup~~
