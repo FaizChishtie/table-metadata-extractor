@@ -1,0 +1,3 @@
+echo Starting Mock Server...
+
+python mock/mockApp.py
