@@ -13,11 +13,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 def findTableMetadata():
     uri = request.json['uri']
 
-    tmp_uri = 'sqlite:///' + os.path.join(basedir, 'db.sqlite')
-
-    connection = create_engine(tmp_uri)
-
-    print(connection.table_names())
+    connection = create_engine(uri)
 
     metadata = MetaData(bind=connection)
 
